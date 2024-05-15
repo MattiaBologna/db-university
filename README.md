@@ -79,5 +79,15 @@ FROM `departments`;
 SELECT `name`, `address`, `head_of_department`
 FROM `departments`;
 
+## QUERY 8
+
+SELECT COUNT(*)
+FROM `teachers`
+WHERE `phone` IS NULL;
+
+SELECT `name`, `surname`, `email`, `office_address`, `office_number`, `phone`
+FROM `teachers`
+WHERE `phone` IS NULL;
+
 
 
