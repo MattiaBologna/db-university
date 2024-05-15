@@ -19,3 +19,12 @@ SELECT `name`, `description`, `cfu`
 FROM `courses`
 WHERE `cfu` > '10';
 
+## QUERY 3
+
+SELECT `name`, `surname`, `date_of_birth`
+FROM `students`
+WHERE `date_of_birth` <= '1994-01-01'  
+ORDER BY `students`.`date_of_birth` DESC
+
+
+
