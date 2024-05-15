@@ -71,4 +71,13 @@ SELECT `name`, `level`
 FROM `degrees`
 WHERE `level` = 'magistrale';
 
+## QUERY 7
+
+SELECT COUNT(*)
+FROM `departments`;
+
+SELECT `name`, `address`, `head_of_department`
+FROM `departments`;
+
+
 
