@@ -49,4 +49,18 @@ FROM `courses`
 WHERE `period` = 'I semestre'
 AND `year` = '1';
 
+## QUERY 5
+
+SELECT COUNT(*)
+FROM `exams`
+WHERE `date` = '2020-06-20'
+AND `hour` > '14:00:00';
+
+SELECT `course_id`, `date`, `hour`, `address`, `location`
+FROM `exams`
+WHERE `date` = '2020-06-20'
+AND `hour` > '14:00:00';
+
+
+
 
