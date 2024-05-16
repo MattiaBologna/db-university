@@ -103,5 +103,11 @@ SELECT COUNT(*) AS `enrolled_per_year`, YEAR(`enrolment_date`)
 FROM `students`
 GROUP BY YEAR(`enrolment_date`);
 
+## QUERY 2
+
+SELECT COUNT(*), `office_address`
+FROM `teachers`
+GROUP BY `office_address`;
+
 
 
