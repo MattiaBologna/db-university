@@ -180,6 +180,17 @@ INNER JOIN `departments`
 ON `degrees`.`department_id` = `departments`.`id`
 ORDER BY `students`.`name` ASC, `students`.`surname` ASC;
 
+## QUERY 5 
+
+SELECT `degrees`.`department_id`, `degrees`.`name`, `degrees`.`level`, `courses`.`name` AS `course_name`, `teachers`.`name`,  `teachers`.`surname` 
+FROM `degrees`
+INNER JOIN `courses` 
+ON `degrees`.`id` = `courses`.`degree_id`
+INNER JOIN `course_teacher`
+ON `courses`.`id` = `course_teacher`.`course_id`
+INNER JOIN `teachers`
+ON `course_teacher`.`teacher_id` = `teachers`.`id`;
+
 
 
 
