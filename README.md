@@ -109,5 +109,12 @@ SELECT COUNT(*), `office_address`
 FROM `teachers`
 GROUP BY `office_address`;
 
+## QUERY 3
+
+SELECT COUNT(*), `exam_id`, AVG(`vote`) AS `media_voto`
+FROM `exam_student`
+GROUP BY `exam_id`;
+
+
 
 
