@@ -116,5 +116,15 @@ FROM `exam_student`
 GROUP BY `exam_id`;
 
 
+## QUERY 4
+
+SELECT COUNT(*), `departments`.`id`, `departments`.`name`
+FROM `courses` 
+INNER JOIN `degrees`
+ON `courses`.`degree_id` = `degrees`.`id`
+INNER JOIN `departments`
+ON `degrees`.`id` = `departments`.`id`
+GROUP BY `departments`.`id`;
+
 
 
