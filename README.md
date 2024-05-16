@@ -170,6 +170,16 @@ INNER JOIN `teachers`
 ON `course_teacher`.`teacher_id` = `teachers`.`id`
 WHERE `teachers`.`id` = '44';
 
+## QUERY 4
+
+SELECT `students`.`name`, `students`.`surname`, `degrees`.`name`, `degrees`.`level`,`degrees`.`address`, `degrees`.`email`, `degrees`.`website`, `departments`.`name` 
+FROM `students`
+INNER JOIN `degrees`
+ON `students`.`degree_id` = `degrees`.`id`
+INNER JOIN `departments` 
+ON `degrees`.`department_id` = `departments`.`id`
+ORDER BY `students`.`name` ASC, `students`.`surname` ASC;
+
 
 
 
