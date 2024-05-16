@@ -191,6 +191,18 @@ ON `courses`.`id` = `course_teacher`.`course_id`
 INNER JOIN `teachers`
 ON `course_teacher`.`teacher_id` = `teachers`.`id`;
 
+## QUERY 6 
+
+SELECT `teachers`.`name`, `teachers`.`surname`, `departments`.`name`
+FROM `departments`
+INNER JOIN `courses`
+ON `departments`.`id` = `courses`.`degree_id`
+INNER JOIN `course_teacher`
+ON `courses`.`id` = `course_teacher`.`course_id`
+INNER JOIN `teachers`
+ON `course_teacher`.`teacher_id` = `teachers`.`id`
+WHERE `departments`.`name` = 'Dipartimento di Matematica';
+
 
 
 
